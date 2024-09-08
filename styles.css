@@ -22,6 +22,7 @@ header {
     border-radius: 50%;
     width: 150px;
     height: 150px;
+    object-fit: cover;
 }
 
 .subtitle {
@@ -29,9 +30,17 @@ header {
     margin-top: 10px;
 }
 
+.contact {
+    margin-top: 10px;
+}
+
 .contact a {
     color: #fff;
     text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
 }
 
 .resume-button {
@@ -50,6 +59,7 @@ header {
 
 .main-container {
     display: flex;
+    margin-top: 20px;
 }
 
 .sidebar {
@@ -61,6 +71,7 @@ header {
 
 .sidebar ul {
     list-style: none;
+    padding: 0;
 }
 
 .sidebar ul li {
@@ -71,14 +82,18 @@ header {
     text-decoration: none;
     color: #007bff;
     font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .sidebar ul li a:hover {
-    text-decoration: underline;
+    background: #ddd;
 }
 
 .sidebar ul li a.active {
-    color: #0056b3;
+    background: #007bff;
+    color: #fff;
 }
 
 .content {
@@ -92,4 +107,5 @@ section {
 
 section h2 {
     margin-bottom: 10px;
+    font-size: 1.5em;
 }

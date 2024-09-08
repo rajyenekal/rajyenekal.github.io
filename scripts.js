@@ -1,4 +1,3 @@
-// Example JavaScript code
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Page Loaded');
+    // Add any JavaScript code here if needed for future interactions
 });

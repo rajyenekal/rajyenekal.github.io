@@ -63,14 +63,24 @@ header {
 
 /* Web view adjustments */
 @media (min-width: 769px) {
+    header {
+        display: none; /* Hide header for web view */
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: row;
+    }
+
     .sidebar {
         width: 30%;
         background: #eee;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        position: sticky;
+        position: fixed;
         top: 0;
+        left: 0;
         height: 100vh;
         overflow-y: auto;
     }
@@ -99,11 +109,31 @@ header {
     }
 
     .content {
-        width: 70%;
+        margin-left: 30%;
         padding: 20px;
         border-radius: 8px;
         background: #fff;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width: 70%;
+    }
+
+    .profile-details {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 30%;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .content-section {
+        display: none;
+    }
+
+    .content-section.active {
+        display: block;
     }
 }
 
@@ -121,33 +151,4 @@ header {
     .content {
         width: 100%;
     }
-}
-
-.content-section {
-    display: none;
-}
-
-.content-section.active {
-    display: block;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-section h2 {
-    margin-bottom: 20px;
-    font-size: 1.5em;
-    color: #333;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 10px;
-}
-
-ul {
-    list-style: disc;
-    margin-left: 20px;
-}
-
-ul li {
-    margin-bottom: 10px;
 }

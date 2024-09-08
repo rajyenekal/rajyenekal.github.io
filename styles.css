@@ -6,13 +6,13 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
 
 header {
-    background: #333;
+    background: linear-gradient(135deg, #333, #555);
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -24,6 +24,7 @@ header {
     width: 150px;
     height: 150px;
     border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     margin: 0 auto 10px auto;
     display: block;
 }
@@ -38,6 +39,10 @@ header {
     text-decoration: none;
 }
 
+.contact i {
+    margin-right: 5px;
+}
+
 .resume-button {
     display: inline-block;
     background: #007bff;
@@ -46,11 +51,12 @@ header {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
-    transition: background 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .resume-button:hover {
-    background: #0056b3;
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
 
 .main-container {
@@ -138,9 +144,11 @@ ul li {
     .sidebar {
         width: 100%;
         margin-bottom: 20px;
+        padding: 10px;
     }
 
     .content {
         width: 100%;
+        padding: 10px;
     }
 }

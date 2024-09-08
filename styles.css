@@ -99,13 +99,25 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .header {
+        display: block; /* Show header in mobile view */
+    }
+    
+    .profile-details {
+        position: static;
+        width: 100%;
+        background: none;
+        padding: 0;
+        box-shadow: none;
+    }
+    
     .main-container {
         flex-direction: column;
     }
 
     .sidebar {
         width: 100%;
-        margin-bottom: 20px;
+        margin-left: 0;
     }
 
     .content {

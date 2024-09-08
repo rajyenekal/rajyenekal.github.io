@@ -6,16 +6,29 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
     color: #333;
 }
 
 header {
-    background: #333;
+    background: #007bff;
     color: #fff;
     padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #fff;
+    opacity: 0.3;
 }
 
 .profile-img {
@@ -24,11 +37,13 @@ header {
     height: 120px;
     object-fit: cover;
     border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .subtitle {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-top: 10px;
+    font-weight: 300;
 }
 
 .contact {
@@ -46,17 +61,18 @@ header {
 
 .resume-button {
     display: inline-block;
-    background: #007bff;
+    background: #28a745;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 24px;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    transition: background 0.3s ease;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .resume-button:hover {
-    background: #0056b3;
+    background: #218838;
+    transform: scale(1.05);
 }
 
 .main-container {
@@ -70,10 +86,9 @@ header {
 .sidebar {
     width: 100%;
     background: #fff;
-    padding: 10px;
-    border-right: none;
+    padding: 20px;
     border-bottom: 2px solid #ddd;
-    box-shadow: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar ul {
@@ -82,7 +97,7 @@ header {
 }
 
 .sidebar ul li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .sidebar ul li a {
@@ -90,7 +105,7 @@ header {
     color: #007bff;
     font-weight: bold;
     display: block;
-    padding: 10px;
+    padding: 12px;
     border-radius: 5px;
     transition: background 0.3s ease, color 0.3s ease;
 }
@@ -104,12 +119,15 @@ header {
 .content {
     width: 100%;
     padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease;
 }
 
 .content-section {
     display: none;
     opacity: 0;
-    transition: opacity 0.5s ease;
 }
 
 .content-section.active {
@@ -121,7 +139,7 @@ section h2 {
     margin-bottom: 20px;
     font-size: 1.8em;
     color: #333;
-    border-bottom: 2px solid #007bff;
+    border-bottom: 3px solid #007bff;
     padding-bottom: 10px;
 }
 
@@ -133,11 +151,11 @@ section h2 {
     }
 
     .subtitle {
-        font-size: 1em;
+        font-size: 1.1em;
     }
 
     .resume-button {
-        padding: 8px 16px;
+        padding: 10px 20px;
     }
 
     .main-container {
@@ -151,7 +169,7 @@ section h2 {
     }
 
     .content {
-        padding: 10px;
+        padding: 15px;
     }
 }
 
@@ -162,11 +180,11 @@ section h2 {
     }
 
     .subtitle {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .resume-button {
-        padding: 6px 12px;
+        padding: 8px 16px;
     }
 
     section h2 {

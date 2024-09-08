@@ -8,9 +8,9 @@ body {
 }
 
 .container {
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* Header Styles */
@@ -38,14 +38,9 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.profile-info {
-    margin-top: 1rem;
-}
-
 .profile-info h1 {
     margin: 0;
-    font-size: 2.5rem;
-    color: #fff;
+    font-size: 2rem;
 }
 
 .subtitle {
@@ -67,35 +62,64 @@ header {
     text-decoration: underline;
 }
 
-.main-nav {
-    margin-top: 1rem;
-}
-
-.main-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.main-nav a {
+.resume-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    background: #007bff;
     color: #fff;
     text-decoration: none;
-    font-size: 1.1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.main-nav a:hover {
-    text-decoration: underline;
+.resume-button:hover {
+    background: #0056b3;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 200px;
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 1rem 0;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+    background: #007bff;
+    color: #fff;
 }
 
 /* Main Content Styles */
 main {
-    margin: 2rem 0;
+    margin-left: 200px;
+    padding: 2rem;
+    width: calc(100% - 200px);
 }
 
 section {
-    margin: 2rem 0;
+    margin-bottom: 2rem;
     padding: 1rem;
     background: #fff;
     border-radius: 0.25rem;
@@ -175,20 +199,4 @@ h3 {
 
 .connect a:hover {
     text-decoration: underline;
-}
-
-/* Resume Button */
-.resume-button {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    margin: 1rem 0;
-    background: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 0.25rem;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
-.resume-button:hover {
-    background: #0056b3;
 }

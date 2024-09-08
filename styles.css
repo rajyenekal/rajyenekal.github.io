@@ -16,11 +16,7 @@ header {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-}
-
-.profile-container {
     position: relative;
-    display: inline-block;
 }
 
 .profile-img {
@@ -30,12 +26,6 @@ header {
     border: 5px solid #fff;
     margin-bottom: 10px;
     object-fit: cover; /* Ensures the image covers the area */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Adds a shadow for depth */
-    transition: transform 0.3s ease;
-}
-
-.profile-img:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 .subtitle {
@@ -105,25 +95,52 @@ header {
 .content {
     width: 75%;
     padding: 20px;
-    background: #fff;
     border-radius: 8px;
+    background: #fff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
 section {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+ul li {
     margin-bottom: 10px;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     .main-container {
         flex-direction: column;
     }
 
-    .sidebar, .content {
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content {
         width: 100%;
     }
 }

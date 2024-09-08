@@ -1,139 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajaneesh K B - Quality Analyst</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="profile-header">
-                <img src="images/Rajaneesh_K_B.jpg" alt="Rajaneesh K B" class="profile-img">
-                <div class="profile-info">
-                    <h1>Rajaneesh K B</h1>
-                    <p class="subtitle">Quality Analyst - I</p>
-                    <p class="contact">
-                        📍 Bengaluru, Karnataka, India | 📞 +91 9741846197 | 📧 <a href="mailto:rajyenekal@gmail.com">rajyenekal@gmail.com</a> | 
-                        <a href="https://www.linkedin.com/in/rajyenekal" target="_blank">LinkedIn</a> | 
-                        <a href="https://github.com/rajyenekal" target="_blank">GitHub</a>
-                    </p>
-                    <a href="https://github.com/rajyenekal/rajyenekal/raw/main/RAJANEESH_KB_QA.zip" class="resume-button" target="_blank">Download My Resume</a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main class="container">
-        <aside class="sidebar">
-            <ul>
-                <li><a href="#about" class="active">About Me</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#interests">Interests</a></li>
-            </ul>
-        </aside>
-        <section class="content">
-            <section id="about" class="section">
-                <h2>About Me</h2>
-                <p>I am a dedicated Quality Analyst with 1.8 years of experience in the software industry, specializing in comprehensive testing methodologies. I have demonstrated expertise in both manual and automation testing, with a focus on enhancing product quality across web, mobile, and API applications. My experience spans various domains, including e-commerce and CRM, where I have effectively contributed to the seamless execution of test strategies and the integration of CI/CD pipelines.</p>
-                <p>I am passionate about driving quality improvements in every phase of development, ensuring the release of reliable, scalable, and user-centric software products.</p>
-            </section>
-            <section id="experience" class="section">
-                <h2>Professional Experience</h2>
-                <div class="experience-item">
-                    <h3>LeadRat CRM</h3>
-                    <p class="role">Quality Analyst - I</p>
-                    <p class="dates">February 2024 – Present</p>
-                    <ul>
-                        <li><strong>Test Planning & Execution:</strong> Designing and implementing comprehensive test cases and test plans for CRM applications, focusing on functionality, UI, regression, and sanity testing.</li>
-                        <li><strong>API & Automation Testing:</strong> Driving API automation using Postman and Rest Assured, ensuring backend reliability and seamless integration with the frontend.</li>
-                        <li><strong>Mobile & Web Automation:</strong> Leveraging Java-Selenium and Appium to automate both web and mobile applications, enhancing performance, functionality, and usability testing.</li>
-                        <li><strong>CI/CD Implementation:</strong> Streamlining the testing process by integrating automated tests into CI/CD pipelines, ensuring rapid deployment and quick feedback loops.</li>
-                        <li><strong>Team Leadership:</strong> Leading a team of two QA professionals, fostering collaboration and excellence, and managing defect logging and resolution via Azure DevOps.</li>
-                        <li><strong>Internationalization Testing:</strong> Ensuring our software's adaptability across different cultures and regions.</li>
-                    </ul>
-                </div>
-                <div class="experience-item">
-                    <h3>Test Yantra Software Solutions Pvt Ltd</h3>
-                    <p class="role">Quality Analyst</p>
-                    <p class="dates">August 2022 – October 2023</p>
-                    <ul>
-                        <li><strong>Agile Methodology:</strong> Executed automated and manual test cases for web and mobile applications within an Agile (Scrum) environment, validating products throughout the SDLC phases.</li>
-                        <li><strong>BlackBox Testing:</strong> Conducted comprehensive BlackBox testing including functionality, usability, smoke, sanity, and regression for web applications.</li>
-                        <li><strong>Automation & Tooling:</strong> Utilized FireFlink for comprehensive automation testing (web, mobile, and API) across a range of domains like e-commerce, cybersecurity, healthcare, and transportation.</li>
-                        <li><strong>Continuous Integration:</strong> Implemented and maintained CI/CD pipelines with Jenkins, improving testing efficiency and accelerating product releases.</li>
-                        <li><strong>Defect Management:</strong> Effectively utilized JIRA for test case management, bug tracking, and ensuring timely issue resolution.</li>
-                    </ul>
-                </div>
-            </section>
-            <section id="education" class="section">
-                <h2>Education</h2>
-                <div class="education-item">
-                    <h3>[Your Degree]</h3>
-                    <p class="institution">[Your Institution]</p>
-                    <p class="dates">[Start Date] – [End Date]</p>
-                    <p>[Brief Description of Your Studies]</p>
-                </div>
-            </section>
-            <section id="skills" class="section">
-                <h2>Skills & Expertise</h2>
-                <div class="skills-content">
-                    <div class="skills-category">
-                        <h3>Programming & Tools:</h3>
-                        <ul>
-                            <li>Java</li>
-                            <li>Selenium</li>
-                            <li>Maven</li>
-                            <li>TestNG</li>
-                            <li>Rest Assured</li>
-                            <li>Postman</li>
-                            <li>Appium</li>
-                            <li>FireFlink</li>
-                            <li>Jenkins</li>
-                            <li>JIRA</li>
-                            <li>Azure DevOps</li>
-                            <li>GitHub</li>
-                            <li>Git</li>
-                            <li>SQL</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Basic JavaScript</li>
-                        </ul>
-                    </div>
-                    <div class="skills-category">
-                        <h3>Testing Frameworks:</h3>
-                        <ul>
-                            <li>Hybrid</li>
-                            <li>Data-driven</li>
-                            <li>CI/CD Pipelines</li>
-                            <li>Automation</li>
-                            <li>BlackBox</li>
-                            <li>UI Testing</li>
-                            <li>API Testing</li>
-                            <li>Mobile Testing</li>
-                        </ul>
-                    </div>
-                    <div class="skills-category">
-                        <h3>Methodologies:</h3>
-                        <ul>
-                            <li>Agile (Scrum)</li>
-                            <li>Test Planning</li>
-                            <li>Defect Management</li>
-                            <li>Regression Testing</li>
-                            <li>Usability Testing</li>
-                            <li>Internationalization Testing</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section id="interests" class="section">
-                <h2>Interests</h2>
-                <p>In my free time, I enjoy exploring new technologies, reading about industry trends, and participating in tech meetups and conferences. I am also passionate about [Your Interests, e.g., outdoor activities, music, or any other hobbies].</p>
-            </section>
-        </section>
-    </main>
-</body>
-</html>
+/* Basic reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.resume-button {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.resume-button:hover {
+    background: #0056b3;
+}
+
+.main-container {
+    display: flex;
+}
+
+.sidebar {
+    width: 25%;
+    background: #eee;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    width: 75%;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}

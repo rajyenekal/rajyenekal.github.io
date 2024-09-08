@@ -1,22 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Handle sidebar navigation
-    const links = document.querySelectorAll('.sidebar a');
-    const sections = document.querySelectorAll('.content .section');
-
-    function changeSection(event) {
-        event.preventDefault();
-        links.forEach(link => link.classList.remove('active'));
-        sections.forEach(section => section.style.display = 'none');
-
-        const targetId = this.getAttribute('href').substring(1);
-        document.getElementById(targetId).style.display = 'block';
-        this.classList.add('active');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section');
+    
+    function setActiveNav() {
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.scrollY >= sectionTop - 50 && window.scrollY < sectionTop + sectionHeight - 50) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').includes(current)) {
+                link.classList.add('active');
+            }
+        });
     }
-
-    links.forEach(link => {
-        link.addEventListener('click', changeSection);
-    });
-
-    // Default to About Me section
-    document.querySelector('.sidebar a').click();
+    
+    window.addEventListener('scroll', setActiveNav);
 });

@@ -1,41 +1,27 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Function to show the selected section and highlight the active menu item
-    function showSection(sectionId) {
-        // Hide all sections
-        const sections = document.querySelectorAll('.content-section');
-        sections.forEach(section => {
-            section.classList.remove('active');
-        });
+document.addEventListener("DOMContentLoaded", () => {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('.content-section');
 
-        // Remove active class from all menu links
-        const menuLinks = document.querySelectorAll('.sidebar ul li a');
-        menuLinks.forEach(link => {
-            link.classList.remove('active');
-        });
+    // Function to handle navigation clicks
+    const handleNavigation = (event) => {
+        event.preventDefault();
 
-        // Show the selected section
-        const selectedSection = document.getElementById(sectionId);
-        if (selectedSection) {
-            selectedSection.classList.add('active');
-        }
+        // Remove active class from all links and sections
+        navLinks.forEach(link => link.classList.remove('active'));
+        sections.forEach(section => section.classList.remove('active'));
 
-        // Highlight the selected menu item
-        const activeLink = document.querySelector(`.sidebar ul li a[data-section="${sectionId}"]`);
-        if (activeLink) {
-            activeLink.classList.add('active');
-        }
+        // Add active class to the clicked link and corresponding section
+        const targetSection = document.querySelector(event.target.getAttribute('href'));
+        event.target.classList.add('active');
+        targetSection.classList.add('active');
+    };
+
+    // Add click event listener to each navigation link
+    navLinks.forEach(link => link.addEventListener('click', handleNavigation));
+
+    // Set default active section
+    const defaultLink = document.querySelector('.nav-link.active');
+    if (defaultLink) {
+        defaultLink.click();
     }
-
-    // Add click event listeners to sidebar links
-    const links = document.querySelectorAll('.sidebar ul li a');
-    links.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault(); // Prevent default anchor behavior
-            const sectionId = link.getAttribute('data-section');
-            showSection(sectionId);
-        });
-    });
-
-    // Show the default section on page load
-    showSection('about-me');
 });

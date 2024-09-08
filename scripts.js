@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Get all navigation links and content sections
     const navLinks = document.querySelectorAll('.nav-link');
     const sections = document.querySelectorAll('.content-section');
 
@@ -21,5 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
     navLinks.forEach(link => link.addEventListener('click', handleNavigation));
 
     // Set default active section
-    document.querySelector('.nav-link.active').click();
+    const defaultLink = document.querySelector('.nav-link.active');
+    if (defaultLink) {
+        defaultLink.click();
+    }
 });

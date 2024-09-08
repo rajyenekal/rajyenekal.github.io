@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajaneesh K B - Quality Analyst</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .resume-button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin: 1rem 0;
+            background: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 0.25rem;
+        }
+        .resume-button:hover {
+            background: #0056b3;
+        }
+        section {
+            margin: 2rem 0;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 0.25rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+        .skills-list li {
+            background: #e9ecef;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Rajaneesh K B</h1>
+            <p>Quality Analyst - I</p>
+            <p>📞 +91 9741846197 | 📧 <a href="mailto:rajyenekal@gmail.com">rajyenekal@gmail.com</a> | 📍 Bengaluru, Karnataka</p>
+            <a href="https://github.com/rajyenekal/rajyenekal/raw/main/RAJANEESH_KB_QA.zip" class="resume-button" target="_blank">Download My Resume</a>
+        </div>
+    </header>
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>I'm a Quality Analyst with 1.8 years of experience specializing in automation and manual testing. I focus on using Selenium, Appium, and RestAssured for comprehensive testing and have strong expertise in CI/CD and DevOps practices.</p>
+        </section>
+        <section>
+            <h2>My Expertise</h2>
+            <h3>Automation Testing</h3>
+            <ul class="skills-list">
+                <li>Selenium</li>
+                <li>Appium</li>
+                <li>RestAssured</li>
+            </ul>
+            <h3>Manual Testing</h3>
+            <ul class="skills-list">
+                <li>Exploratory Testing</li>
+                <li>Test Case Execution</li>
+            </ul>
+            <h3>Hybrid Framework</h3>
+            <ul class="skills-list">
+                <li>Integrated Testing</li>
+                <li>Configurable & Scalable</li>
+                <li>Azure Pipelines Integration</li>
+                <li>Advanced Reporting</li>
+                <li>Retry Analyzer</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Java & Python</li>
+                <li>API Testing with RestAssured</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Let's Connect!</h2>
+            <p>Feel free to reach out at <a href="mailto:rajyenekal@gmail.com">rajyenekal@gmail.com</a>. I'm excited to collaborate on projects or discuss tech!</p>
+        </section>
+    </div>
+</body>
+</html>

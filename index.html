@@ -10,23 +10,16 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f6f8fa;
-            color: #333;
+            background-color: #f4f4f4;
         }
         header {
-            background: #24292e;
+            background: #333;
             color: #fff;
-            padding: 2rem 0;
+            padding: 1rem 0;
             text-align: center;
-            border-bottom: 2px solid #e1e4e8;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
-        }
-        header p {
-            margin: 0.5rem 0;
-            font-size: 1.1rem;
         }
         .container {
             width: 80%;
@@ -35,52 +28,42 @@
         }
         .resume-button {
             display: inline-block;
-            padding: 0.75rem 1.5rem;
+            padding: 0.5rem 1rem;
             margin: 1rem 0;
-            background: #2cbe4e;
+            background: #007bff;
             color: #fff;
             text-decoration: none;
-            border-radius: 0.3rem;
-            font-weight: bold;
-            font-size: 1rem;
+            border-radius: 0.25rem;
         }
         .resume-button:hover {
-            background: #1b8a38;
+            background: #0056b3;
+        }
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 1rem 0;
         }
         section {
             margin: 2rem 0;
-            padding: 2rem;
+            padding: 1rem;
             background: #fff;
-            border-radius: 0.5rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 0.25rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            color: #0366d6;
-            border-bottom: 2px solid #e1e4e8;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        .job-title {
-            font-weight: bold;
-            color: #2d2d2d;
-        }
-        .job-duration {
-            font-style: italic;
-            color: #6a737d;
+            color: #333;
         }
         .skills-list {
             list-style: none;
             padding: 0;
         }
         .skills-list li {
-            background: #f0f0f0;
+            background: #e9ecef;
             margin: 0.5rem 0;
-            padding: 0.75rem;
+            padding: 0.5rem;
             border-radius: 0.25rem;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        }
-        .git-link {
-            color: #0366d6;
         }
     </style>
 </head>
@@ -88,71 +71,45 @@
     <header>
         <div class="container">
             <h1>Rajaneesh K B</h1>
-            <p class="job-title">Quality Analyst - I</p>
+            <p>Quality Analyst - I</p>
+            <img src="images/Rajaneesh K B.jpg" alt="Rajaneesh K B" class="profile-img">
             <p>📞 +91 9741846197 | 📧 <a href="mailto:rajyenekal@gmail.com">rajyenekal@gmail.com</a> | 📍 Bengaluru, Karnataka</p>
             <a href="https://github.com/rajyenekal/rajyenekal/raw/main/RAJANEESH_KB_QA.zip" class="resume-button" target="_blank">Download My Resume</a>
         </div>
     </header>
     <div class="container">
         <section>
-            <h2>Profile</h2>
-            <p>Quality Analyst with 1.8 years of experience in the software industry. Proven track record of ensuring product quality through comprehensive testing methodologies in a product-based company setting.</p>
+            <h2>About Me</h2>
+            <p>I'm a Quality Analyst with 1.8 years of experience specializing in automation and manual testing. I focus on using Selenium, Appium, and RestAssured for comprehensive testing and have strong expertise in CI/CD and DevOps practices.</p>
         </section>
         <section>
-            <h2>Professional Experience</h2>
-            <div>
-                <h3>Leadrat CRM</h3>
-                <p class="job-duration">February 2024 - Present</p>
-                <ul>
-                    <li>Currently serving as a Quality Analyst – I in a product-centric company specializing in CRM applications.</li>
-                    <li>Designing and implementing Test Cases and Test Plans.</li>
-                    <li>Performing UI, Regression, Sanity, and Functionality testing, along with API Automation using Postman & RestAssured.</li>
-                    <li>Automation testing using Java-Selenium, Mobile testing using Appium, and implementing CI/CD pipelines.</li>
-                    <li>Conducting Internationalization Testing and leading a team of two using Azure DevOps.</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Test Yantra Software Solutions Pvt Ltd</h3>
-                <p class="job-duration">August 2022 - October 2023</p>
-                <ul>
-                    <li>Worked in a product-based, e-commerce domain, executing automated test cases for web and mobile applications in Agile Methodology (Scrum).</li>
-                    <li>Conducted BlackBox Testing and contributed to the development of Custom NLPs and Program Elements.</li>
-                    <li>Achieved comprehensive automation using FireFlink for Web, Mobile, and API testing.</li>
-                    <li>Implemented and maintained continuous integration with Jenkins (CI/CD), integrating automated tests into the build pipeline.</li>
-                    <li>Utilized JIRA for effective test management and defect tracking.</li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <h2>Technical Skills</h2>
+            <h2>My Expertise</h2>
+            <h3>Automation Testing</h3>
             <ul class="skills-list">
-                <li>Java</li>
                 <li>Selenium</li>
-                <li>Maven</li>
-                <li>TestNG</li>
-                <li>Rest Assured</li>
-                <li>Postman</li>
                 <li>Appium</li>
-                <li>FireFlink (Web, Mobile, API)</li>
-                <li>JIRA</li>
-                <li>Azure DevOps</li>
-                <li>GitHub</li>
-                <li>Git</li>
-                <li>Jenkins</li>
-                <li>SQL</li>
-                <li>HTML, CSS, Basic JS</li>
-                <li>Testing frameworks: Hybrid, Data-driven</li>
+                <li>RestAssured</li>
+            </ul>
+            <h3>Manual Testing</h3>
+            <ul class="skills-list">
+                <li>Exploratory Testing</li>
+                <li>Test Case Execution</li>
+            </ul>
+            <h3>Hybrid Framework</h3>
+            <ul class="skills-list">
+                <li>Integrated Testing</li>
+                <li>Configurable & Scalable</li>
+                <li>Azure Pipelines Integration</li>
+                <li>Advanced Reporting</li>
+                <li>Retry Analyzer</li>
             </ul>
         </section>
         <section>
-            <h2>Git Project</h2>
-            <p><strong>Description:</strong> Automated e-commerce website utilizing Java and Selenium through the implementation of a Hybrid Framework. Using Rest Assured, automated the APIs in the application.</p>
-            <p><strong>Technologies Used:</strong> Java, Selenium, Rest Assured, Hybrid, Data-driven Framework, Jenkins, Git.</p>
-            <p><a href="https://github.com/rajyenekal?tab=repositories" class="git-link" target="_blank">View GitHub Projects</a></p>
-        </section>
-        <section>
-            <h2>Certification</h2>
-            <p>Software Testing (Manual & Automation) - QSpiders</p>
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Java & Python</li>
+                <li>API Testing with RestAssured</li>
+            </ul>
         </section>
         <section>
             <h2>Let's Connect!</h2>

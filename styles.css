@@ -50,16 +50,16 @@ header {
 
 .subtitle {
     font-size: 1.2rem;
-    color: #ccc;
+    color: #ddd;
 }
 
 .contact {
-    margin: 0.5rem 0;
+    font-size: 1rem;
     color: #fff;
 }
 
 .contact a {
-    color: #fff;
+    color: #00bfff;
     text-decoration: none;
 }
 
@@ -67,19 +67,26 @@ header {
     text-decoration: underline;
 }
 
-.resume-button {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    margin: 1rem 0;
-    background: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 0.25rem;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+.main-nav {
+    margin-top: 1rem;
 }
 
-.resume-button:hover {
-    background: #0056b3;
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
 }
 
 /* Main Content Styles */
@@ -117,7 +124,7 @@ h3 {
 }
 
 /* Skills Section */
-.skills {
+.skills-content {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -168,4 +175,20 @@ h3 {
 
 .connect a:hover {
     text-decoration: underline;
+}
+
+/* Resume Button */
+.resume-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.resume-button:hover {
+    background: #0056b3;
 }

@@ -11,12 +11,6 @@ body {
     color: #333;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 header {
     background: #333;
     color: #fff;
@@ -81,6 +75,10 @@ header {
 
 .sidebar ul li a:hover {
     text-decoration: underline;
+}
+
+.sidebar ul li a.active {
+    color: #0056b3;
 }
 
 .content {

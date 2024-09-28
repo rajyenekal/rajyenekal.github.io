@@ -72,8 +72,8 @@
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
 	<li><a href="#experience"><i class="bi bi-file-earmark-text navicon"></i> Experience</a></li>
+        <li><a href="#projects"><i class="bi bi-hdd-stack navicon"></i> Projects</a></li>
 	<li><a href="#skills"><i class="bi bi-briefcase navicon"></i> Skills</a></li>
-	<li><a href="#projects"><i class="bi bi-hdd-stack navicon"></i> Projects</a></li>
 	<li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
 
       	</ul>
@@ -99,7 +99,7 @@
     
 
 <!-- About Section -->
-<section id="about" class="about section">
+<section id="about" class="about section light-background">
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
@@ -144,7 +144,6 @@
 
 </section><!-- /About Section -->
 
-      
 
 
 
@@ -153,7 +152,7 @@
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>Professional Experience</h2>
+    <h2 style="margin-bottom: 0;">Professional Experience</h2> <!-- Remove bottom margin -->
   </div><!-- End Section Title -->
 
   <div class="container">
@@ -163,12 +162,19 @@
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
         <!-- Experience Item 1 -->
-        <article class="resume-item pb-0">
+        <article class="resume-item" style="margin-bottom: 30px;"> <!-- Add margin-bottom for gap -->
           <header>
-            <h4 style="font-weight: bold;">Quality Analyst - I</h4>
+            <h4 style="font-weight: bold; margin: 0;">Quality Analyst - I</h4> <!-- Set margin to 0 -->
             <h5 style="color: #555;">February 2024 – Present</h5>
-            <p><em style="background-color: #f0f0f0; padding: 2px 5px; border-radius: 3px; font-weight: bold; color: #333;">LeadRat CRM</em></p>
+            <div style="display: flex; align-items: center;"> <!-- Flex container for image and text -->
+              <img src="C:\Users\New User\OneDrive\Pictures\Skill icons\Leadrat-Logo-01-2048x575.png" alt="LeadRat" style="width: 40px; height: auto; margin-right: 10px;"> <!-- Company image -->
+             <h4 style="font-weight: bold;font-size: 24px;  margin: 0;">LeadRat CRM</h4> <!-- Set margin to 0 -->
+
+
+
+            </div>
           </header>
+<br>
           <div class="resume-details">
             <ul>
               <li><strong>Test Planning & Execution:</strong> Designing and implementing comprehensive test cases and test plans for CRM applications, focusing on functionality, UI, regression, and sanity testing.</li>
@@ -184,10 +190,15 @@
         <!-- Experience Item 2 -->
         <article class="resume-item pb-0">
           <header>
-            <h4 style="font-weight: bold;">Associate Software Engineer</h4>
+            <h4 style="font-weight: bold; margin: 0;">Associate Software Engineer</h4> <!-- Set margin to 0 -->
             <h5 style="color: #555;">August 2022 – October 2023</h5>
-            <p><em style="background-color: #f0f0f0; padding: 2px 5px; border-radius: 3px; font-weight: bold; color: #333;">Test Yantra Software Solutions Pvt Ltd</em></p>
+            <div style="display: flex; align-items: center;"> <!-- Flex container for image and text -->
+              <img src="C:\Users\New User\OneDrive\Pictures\Skill icons\Fireflink.png" alt="Test Yantra" style="width: 40px; height: auto; margin-right: 10px;"> <!-- Company image -->
+              <h4 style="font-weight: bold;font-size: 24px;  margin: 0;">FireFlink Pvt Ltd</h4> <!-- Set margin to 0 -->
+
+            </div>
           </header>
+            <br>
           <div class="resume-details">
             <ul>
               <li><strong>Agile Methodology:</strong> Executed automated and manual test cases for web and mobile applications within Agile (Scrum), validating products across SDLC phases.</li>
@@ -205,210 +216,12 @@
 
   </div>
 
-</section><!-- /Experience Section -->
+</section>
+<!-- /Experience Section -->
 
 
 
-
-
-<!-- Skills Section -->
-<section id="skills" class="skills section light-background">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Skills</h2>
-    <p>Explore my technical skills, testing expertise, and frameworks that I utilize in Quality Assurance and Testing.</p>
-  </div><!-- End Section Title -->
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row skills-content skills-animation">
-
-      <div class="col-lg-6">
-
-        <!-- Progress Item for Java -->
-        <div class="progress">
-          <span class="skill"><i class="fab fa-java"></i> <span>Java</span> <i class="val">90%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-        <!-- Progress Item for Selenium -->
-        <div class="progress">
-          <span class="skill"><i class="fas fa-globe"></i> <span>Selenium</span> <i class="val">85%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-        <!-- Progress Item for Maven -->
-        <div class="progress">
-          <span class="skill"><i class="fas fa-cogs"></i> <span>Maven</span> <i class="val">80%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-        <!-- Progress Item for TestNG -->
-        <div class="progress">
-          <span class="skill"><i class="fas fa-vial"></i> <span>Test NG</span> <i class="val">75%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-        <!-- Progress Item for Rest Assured -->
-        <div class="progress">
-          <span class="skill"><i class="fas fa-network-wired"></i> <span>Rest Assured</span> <i class="val">70%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-        <!-- Progress Item for Postman -->
-        <div class="progress">
-          <span class="skill"><i class="fas fa-envelope"></i> <span>Postman</span> <i class="val">80%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-        <!-- Progress Item for Git -->
-        <div class="progress">
-          <span class="skill"><i class="fab fa-git"></i> <span>Git</span> <i class="val">85%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-        <!-- Progress Item for SQL -->
-        <div class="progress">
-          <span class="skill"><i class="fas fa-database"></i> <span>SQL</span> <i class="val">80%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-	  <!-- Progress Item for Appium -->
-        <div class="progress">
-          <span class="skill"><i class="fas fa-mobile-alt"></i> <span>Appium</span> <i class="val">75%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-      </div>
-
-      <div class="col-lg-6">
-
-      
-
-        <!-- Progress Item for FireFlink -->
-        <div class="progress">
-          <span class="skill"><i class="fas fa-fire"></i> <span>FireFlink</span> <i class="val">70%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-        <!-- Progress Item for Jenkins -->
-        <div class="progress">
-          <span class="skill"><i class="fab fa-jenkins"></i> <span>Jenkins</span> <i class="val">85%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-        <!-- Progress Item for JIRA -->
-        <div class="progress">
-          <span class="skill"><i class="fab fa-jira"></i> <span>JIRA</span> <i class="val">80%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-        <!-- Progress Item for Azure DevOps -->
-        <div class="progress">
-          <span class="skill"><i class="fab fa-azure-devops"></i> <span>Azure DevOps</span> <i class="val">75%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-        <!-- Progress Item for GitHub -->
-        <div class="progress">
-          <span class="skill"><i class="fab fa-github"></i> <span>GitHub</span> <i class="val">85%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-        <!-- Progress Item for HTML -->
-        <div class="progress">
-          <span class="skill"><i class="fab fa-html5"></i> <span>HTML</span> <i class="val">90%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-        <!-- Progress Item for CSS -->
-        <div class="progress">
-          <span class="skill"><i class="fab fa-css3-alt"></i> <span>CSS</span> <i class="val">85%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-        <!-- Progress Item for Basic JavaScript -->
-        <div class="progress">
-          <span class="skill"><i class="fab fa-js"></i> <span>Basic JavaScript</span> <i class="val">75%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-      </div>
-
-    </div>
-
-<!-- Testing Frameworks and QA Skills Section-->
-<div class="row mt-5">
-  <div class="col-lg-6">
-    <h3 style="margin-bottom: 20px;">QA Skills :</h3> <!-- Added margin-bottom -->
-    <ul class="list" style="line-height: 1.8; font-weight: 500; list-style-type: none; padding: 0; margin: 0;">
-      <li style="margin-bottom: 10px;"><i class="fas fa-project-diagram" style="margin-right: 10px;"></i> Agile (Scrum)</li> <!-- Added margin-right -->
-      <li style="margin-bottom: 10px;"><i class="fas fa-tachometer-alt" style="margin-right: 10px;"></i> Test Planning</li> <!-- Added margin-right -->
-      <li style="margin-bottom: 10px;"><i class="fas fa-bug" style="margin-right: 10px;"></i> Defect Management</li> <!-- Added margin-right -->
-      <li style="margin-bottom: 10px;"><i class="fas fa-redo-alt" style="margin-right: 10px;"></i> Regression Testing</li> <!-- Added margin-right -->
-      <li style="margin-bottom: 10px;"><i class="fas fa-user-check" style="margin-right: 10px;"></i> Usability Testing</li> <!-- Added margin-right -->
-      <li style="margin-bottom: 10px;"><i class="fas fa-globe-americas" style="margin-right: 10px;"></i> Internationalization Testing</li> <!-- Added margin-right -->
-      <li style="margin-bottom: 10px;"><i class="fas fa-robot" style="margin-right: 10px;"></i> Automation</li> <!-- Added margin-right -->
-      <li style="margin-bottom: 10px;"><i class="fas fa-search" style="margin-right: 10px;"></i> Blackbox Testing</li> <!-- Added margin-right -->
-      <li style="margin-bottom: 10px;"><i class="fas fa-mobile-alt" style="margin-right: 10px;"></i> UI Testing</li> <!-- Added margin-right -->
-      <li style="margin-bottom: 10px;"><i class="fas fa-plug" style="margin-right: 10px;"></i> API Testing</li> <!-- Added margin-right -->
-      <li style="margin-bottom: 10px;"><i class="fas fa-mobile-alt" style="margin-right: 10px;"></i> Mobile Testing</li> <!-- Added margin-right -->
-    </ul>
-  </div>
-
-  <div class="col-lg-6">
-    <h3 style="margin-bottom: 20px;">Testing Frameworks :</h3>
-    <ul class="list" style="line-height: 1.8; font-weight: 500; list-style-type: none; padding: 0; margin: 0;">
-      <li style="margin-bottom: 10px;"><i class="fas fa-layer-group" style="margin-right: 10px;"></i> Hybrid</li> <!-- Added margin-right -->
-      <li style="margin-bottom: 10px;"><i class="fas fa-database" style="margin-right: 10px;"></i> Data-driven</li> <!-- Added margin-right -->
-    </ul>
-  </div>
-</div><!-- End Testing Frameworks and QA Skills Section -->
-
-
-  </div>
-
-</section><!-- /Skills Section -->
-
-
-
-
-
+     
 <!-- Projects Section -->
 <section id="projects" class="projects section light-background">
 
@@ -431,7 +244,7 @@
           <h4 class="title">
             <a href="https://github.com/rajyenekal/Leadrat_Automation" class="stretched-link" target="_blank">Leadrat Automation</a>
           </h4>
-          <p class="description">Test automation Framework for Real Estate CRM application.</p>
+          <p class="description">A test automation framework for the Real Estate CRM covers web, mobile, and API, ensuring efficient testing and quality.</p>
         </div>
       </div><!-- End Project Item -->
 
@@ -467,6 +280,236 @@
 
 </section><!-- /Projects Section -->
    
+
+
+
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills section ">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Skills</h2>
+    <p>Explore my technical skills, testing expertise, and frameworks that I utilize in Quality Assurance and Testing.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row skills-content skills-animation">
+
+      <!-- QA Skills Section -->
+      <div class="col-lg-6">
+        <h3 style="margin-bottom: 20px;">QA Skills:</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+              <div class="card-body">
+                <i class="fas fa-project-diagram" style="font-size: 20px;"></i>
+                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">Agile (Scrum)</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+              <div class="card-body">
+                <i class="fas fa-tachometer-alt" style="font-size: 20px;"></i>
+                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">Test Planning</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+              <div class="card-body">
+                <i class="fas fa-bug" style="font-size: 20px;"></i>
+                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">Defect Management</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+              <div class="card-body">
+                <i class="fas fa-redo-alt" style="font-size: 20px;"></i>
+                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">Regression Testing</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+              <div class="card-body">
+                <i class="fas fa-user-check" style="font-size: 20px;"></i>
+                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">Usability Testing</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+              <div class="card-body">
+                <i class="fas fa-globe-americas" style="font-size: 20px;"></i>
+                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">Internationalization Testing</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+              <div class="card-body">
+                <i class="fas fa-robot" style="font-size: 20px;"></i>
+                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">Automation</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+              <div class="card-body">
+                <i class="fas fa-search" style="font-size: 20px;"></i>
+                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">Blackbox Testing</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+              <div class="card-body">
+                <i class="fas fa-mobile-alt" style="font-size: 20px;"></i>
+                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">UI Testing</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+              <div class="card-body">
+                <i class="fas fa-plug" style="font-size: 20px;"></i>
+                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">API Testing</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+              <div class="card-body">
+                <i class="fas fa-mobile-alt" style="font-size: 20px;"></i>
+                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">Mobile Testing</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End QA Skills Section -->
+
+      <!-- Testing Frameworks Section -->
+      <div class="col-lg-6">
+        <h3 style="margin-bottom: 20px;">Testing Frameworks:</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+              <div class="card-body">
+                <i class="fas fa-layer-group" style="font-size: 20px;"></i>
+                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">Hybrid</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+              <div class="card-body">
+                <i class="fas fa-database" style="font-size: 20px;"></i>
+                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">Data-driven</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Testing Frameworks Section -->
+
+    </div>
+
+
+<!-- Images Row Section -->
+<div class="row mt-5">
+  <div class="col-12">
+    <h3 style="margin-bottom: 20px;">Tools & Technologies:</h3>
+  </div>
+
+  <!-- First Row -->
+  <div class="col-md-3 text-center">
+    <img src="C:\Users\New User\OneDrive\Pictures\Skill icons\selenium.png" alt="Selenium" style="width: 80%; height: auto;">
+    <p><strong></strong></p>
+  </div>
+  <div class="col-md-3 text-center">
+    <img src="C:\Users\New User\OneDrive\Pictures\Skill icons\java-logo.png" alt="Java" style="width: 80%; height: auto;">
+    <p><strong></strong></p>
+  </div>
+  <div class="col-md-3 text-center">
+    <img src="C:\Users\New User\OneDrive\Pictures\Skill icons\jenkins.jpg" alt="Jenkins" style="width: 80%; height: auto;">
+    <p><strong></strong></p>
+  </div>
+  <div class="col-md-3 text-center">
+    <img src="C:\Users\New User\OneDrive\Pictures\Skill icons\maven.jpg" alt="Maven" style="width: 80%; height: auto;">
+    <p><strong></strong></p>
+  </div>
+
+  <!-- Second Row -->
+ <div class="col-md-3 text-center">
+  <img src="C:\Users\New User\OneDrive\Pictures\Skill icons\Jira.png" alt="Jira" style="width: 80%; height: auto; margin-bottom: 20px !important;">
+  <p><strong></strong></p>
+</div>
+
+
+  <div class="col-md-3 text-center">
+    <img src="C:\Users\New User\OneDrive\Pictures\Skill icons\testng.png" alt="TestNG" style="width: 80%; height: auto;">
+    <p><strong></strong></p>
+  </div>
+  <div class="col-md-3 text-center">
+    <img src="C:\Users\New User\OneDrive\Pictures\Skill icons\Azure.png" alt="Azure" style="width: 80%; height: auto;">
+    <p><strong></strong></p>
+  </div>
+  <div class="col-md-3 text-center">
+    <img src="C:\Users\New User\OneDrive\Pictures\Skill icons\restassured.jpg" alt="Rest Assured" style="width: 80%; height: auto;">
+    <p><strong></strong></p>
+  </div>
+
+  <!-- Third Row -->
+  <div class="col-md-3 text-center">
+    <img src="C:\Users\New User\OneDrive\Pictures\Skill icons\github.png" alt="GitHub" style="width: 80%; height: auto;">
+    <p><strong></strong></p>
+  </div>
+  <div class="col-md-3 text-center">
+    <img src="C:\Users\New User\OneDrive\Pictures\Skill icons\postman.png" alt="Postman" style="width: 80%; height: auto;">
+    <p><strong></strong></p>
+  </div>
+  <div class="col-md-3 text-center">
+    <img src="C:\Users\New User\OneDrive\Pictures\Skill icons\Html.png" alt="HTML" style="width: 80%; height: auto;">
+    <p><strong></strong></p>
+  </div>
+  <div class="col-md-3 text-center">
+    <img src="C:\Users\New User\OneDrive\Pictures\Skill icons\CSS.jpg" alt="CSS" style="width: 80%; height: auto;">
+    <p><strong></strong></p>
+  </div>
+
+  <!-- Fourth Row -->
+  <div class="col-md-3 text-center">
+    <img src="C:\Users\New User\OneDrive\Pictures\Skill icons\js.jpg" alt="JavaScript" style="width: 80%; height: auto;">
+    <p><strong></strong></p>
+  </div>
+  <div class="col-md-3 text-center">
+    <img src="C:\Users\New User\OneDrive\Pictures\Skill icons\Appium.png" alt="Appium" style="width: 80%; height: auto;">
+    <p><strong></strong></p>
+  </div>
+  <div class="col-md-3 text-center">
+    <img src="C:\Users\New User\OneDrive\Pictures\Skill icons\Git.png" alt="Git" style="width: 80%; height: auto;">
+    <p><strong></strong></p>
+  </div>
+  <div class="col-md-3 text-center">
+    <img src="C:\Users\New User\OneDrive\Pictures\Skill icons\SQL.jpeg" alt="SQL" style="width: 80%; height: auto;">
+    <p><strong></strong></p>
+  </div>
+</div><!-- End Images Row Section -->
+
+ 
+
+</section><!-- End Skills Section -->
+
+
+
+
+
+
+
 
 
     <!-- Contact Section -->

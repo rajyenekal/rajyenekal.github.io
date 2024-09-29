@@ -57,17 +57,17 @@
   <a href="https://github.com/rajyenekal" class="github" target="_blank" aria-label="GitHub" title="GitHub Profile">
     <i class="bi bi-github"></i>
   </a>
-  <a href="https://drive.google.com/file/d/1fCN4Tn7fiz4zF0zoEEaADXkKMHqOLp-U/view?usp=sharing" class="view-resume" target="_blank" aria-label="View Resume" title="View my resume">
+  <a href="https://drive.google.com/file/d/1tazE_JHt0wnwhXxzQC8H864Z_Op6nLs3/view?usp=sharing" class="view-resume" target="_blank" aria-label="View Resume" title="View my resume">
     <i class="bi bi-eye"></i>
   </a>
-  <a href="https://drive.google.com/uc?export=download&id=1fCN4Tn7fiz4zF0zoEEaADXkKMHqOLp-U" class="download-resume" aria-label="Download Resume" title="Download my resume">
+  <a href="https://drive.google.com/uc?export=download&id=1tazE_JHt0wnwhXxzQC8H864Z_Op6nLs3" class="download-resume" aria-label="Download Resume" title="Download my resume">
     <i class="bi bi-download"></i>
   </a>
 </div>
 
 
 
-    <nav id="navmenu" class="navmenu">
+     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
@@ -97,52 +97,220 @@
 
     </section><!-- /Hero Section -->
     
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #f5f5f5;
+        }
 
-<!-- About Section -->
-<section id="about" class="about section light-background">
+        .about-icon-box {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px;
+            text-align: center; /* Center text inside the box */
+        }
 
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>About</h2>
-    <p>I am a dedicated <strong>Automation QA Engineer</strong> with <strong>2 years of experience</strong> in the software industry, focusing on improving product quality and ensuring seamless delivery of user-centric software products.</p>
-    <p class="py-3">
-      With a strong focus on both <strong>manual and automation testing</strong>, I am passionate about driving product quality, improving efficiency, and delivering robust testing strategies that ensure product success across multiple domains.
-    </p>
-    <p class="py-3">
-      Over the years, I have worked extensively in <strong>e-commerce</strong>, <strong>cybersecurity</strong>, and <strong>CRM domains</strong>, contributing to the successful execution of test strategies and the smooth integration of CI/CD pipelines. My expertise spans <strong>Web, Mobile, and API testing</strong>, where I have consistently ensured product reliability, scalability, and quality.
-    </p>
-    <p class="py-3">
-      My passion for testing has driven me to stay up to date with the latest tools and methodologies. From managing <strong>BlackBox testing</strong> for functionality, usability, and regression to automating complex scenarios using <strong>Selenium, Appium, and Rest Assured</strong>, I have refined my skills to adapt to evolving technologies and project needs. Additionally, I actively work with Agile teams to enhance product testing efficiency through continuous improvement and effective collaboration.
-    </p>
-  </div><!-- End Section Title -->
+        .about-icon-box i {
+            font-size: 40px;
+            color: #149ddd;
+        }
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
+        .about-icon-box p {
+            font-size: 1.1rem;
+            color: #000;
+            margin-top: 20px;
+        }
 
-    <div class="row gy-4 justify-content-center">
+        .about-icon-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .about-icon-box i {
+                font-size: 30px; /* Smaller icon size on mobile */
+            }
+
+            .about-icon-box p {
+                font-size: 1rem; /* Smaller text size on mobile */
+            }
+
+            .row {
+                justify-content: center; /* Center columns on smaller screens */
+            }
+        }
+
+        .center-column {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <title>About Me Section</title>
+</head>
+<body>
+    <!-- About Section -->
+    <section id="about" class="about section light-background">
+        <!-- Section Title -->
+        <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 20px; text-align: center; color: #050d18;">About Me</h2>
+        <p style="font-size: 1.2rem; text-align: center; color: #000; margin-bottom: 40px;">
+            I am a dedicated Automation QA Engineer</strong> with 2 years of experience</strong> in the software industry, focusing on improving product quality and ensuring seamless delivery of user-centric software products.
+        </p>
+
+        <div class="container">
+            <div class="row">
+                <!-- First Column -->
+                <div class="col-lg-6 col-md-12 mb-4" data-aos="fade-right" data-aos-delay="200">
+                    <div class="about-icon-box">
+                        <i class="fas fa-tools"></i>
+                        <p>
+                            <strong style="color: #050d18;">Manual & Automation Testing</strong> are my core strengths. I am passionate about driving product quality, improving efficiency, and delivering robust testing strategies that ensure product success across multiple domains.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Second Column -->
+                <div class="col-lg-6 col-md-12 mb-4" data-aos="fade-left" data-aos-delay="200">
+                    <div class="about-icon-box">
+                        <i class="fas fa-briefcase"></i>
+                        <p>
+                            I have experience in <strong style="color: #050d18;">E-commerce</strong>, <strong style="color: #050d18;">Cybersecurity</strong>, and <strong style="color: #050d18;">CRM domains</strong>, contributing to the successful execution of test strategies and the smooth integration of CI/CD pipelines.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Third Column -->
+                <div class="col-lg-6 col-md-12 mb-4" data-aos="fade-right" data-aos-delay="300">
+                    <div class="about-icon-box">
+                        <i class="fas fa-globe"></i>
+                        <p>
+                            I specialize in <strong style="color: #050d18;">Web, Mobile, and API testing</strong>, ensuring product reliability, scalability, and quality, consistently delivering user-centric software solutions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Fourth Column -->
+                <div class="col-lg-6 col-md-12 mb-4" data-aos="fade-left" data-aos-delay="300">
+                    <div class="about-icon-box">
+                        <i class="fas fa-laptop-code"></i>
+                        <p>
+                            My technical expertise includes <strong style="color: #050d18;">Selenium, Appium, and Rest Assured</strong>. I automate complex scenarios while managing <strong style="color: #050d18;">BlackBox testing</strong> for functionality, usability, and regression.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row center-column">
+                <!-- Fifth Column (Agile Teams) -->
+                <div class="col-lg-6 col-md-12 mb-4" data-aos="fade-left" data-aos-delay="300">
+                    <div class="about-icon-box">
+                        <i class="fas fa-users"></i>
+                        <p>
+                            I work closely with <strong style="color: #050d18;">Agile teams</strong> to enhance product testing efficiency through continuous improvement and effective collaboration.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Section Title -->
+    </section><!-- End About Section -->
+</body>
+</html>
+
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .resume-item {
+            display: flex;
+            align-items: center; /* Align items centrally */
+            padding: 10px; /* Adjusted padding */
+            margin-bottom: 20px;
+            width: 100%; /* Full width for responsiveness */
+        }
+
+        .resume-item i {
+            font-size: 32px; /* Increased icon size */
+            color: #333; /* Icon color */
+            margin-right: 15px; /* Space between icon and text */
+            flex-shrink: 0; /* Prevent icon from shrinking */
+        }
+
+        .resume-title {
+            font-size: 20px; /* Consistent title size */
+            margin: 0;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .resume-subtitle {
+            margin: 5px 0;
+            color: #777;
+            font-size: 16px; /* Ensure subtitle size is consistent */
+        }
+
+        .resume-text {
+            color: #555;
+            margin: 5px 0;
+            font-size: 14px; /* Ensure text size is consistent */
+            line-height: 1.5; /* Improve readability */
+        }
+    </style>
+<br>
+<br>
+    <!-- Education Section -->
+    <div class="resume-item">
+        <i class="fas fa-graduation-cap"></i> <!-- Graduation cap icon -->
+        <div>
+          <h4 style="font-weight: bold; margin: 0;">Mangalore University</h4>
+
+            <h5 class="resume-subtitle">2017 - 2020</h5>
            
-        <!-- Education Section -->
-        <h3 class="resume-title">Education</h3>
-        <div class="resume-item pb-0">
-          <h4>Bachelor of Commerce</h4>
-          <h5>2017 - 2020</h5>
-          <p><em><strong>Mangalore University</strong></em></p>
-          <p>Graduated with a focus on <strong>commerce principles</strong>, <strong>accounting</strong>, and <strong>business management</strong>.</p>
-        </div><!-- End Education Item -->
-
-        <!-- Certification Section -->
-        <h3 class="resume-title">Certifications</h3>
-        <div class="resume-item pb-0">
-          <h4><strong>Manual and Automation Testing</strong></h4>
-          <h5>QSpiders</h5>
-          <p>Certified in both <strong>manual and automation testing methodologies</strong>, with hands-on experience in tools like <strong>Selenium, Appium, and Postman</strong>.</p>
-        </div><!-- End Certification Item -->
-
-      </div>
+            <p class="resume-text">Graduated with a focus on <strong>commerce principles</strong>, <strong>accounting</strong>, and <strong>business management</strong>.</p>
+        </div>
     </div>
 
-  </div>
+    <!-- Horizontal Line -->
+    <hr style="border: none; height: 1px; background-color: #149ddd; width: 90%; margin: 10px 19px;">
 
-</section><!-- /About Section -->
+
+    <!-- Certifications Section -->
+    <div class="resume-item">
+       <i class="fas fa-award"></i>
+
+        <div>
+           <h4 style="font-weight: bold; margin: 0;">Manual and Automation Testing</h4>
+
+            <h5 class="resume-subtitle">QSpiders</h5>
+            <p class="resume-text">Certified in both <strong>manual and automation testing</strong>, with hands-on experience in tools like <strong>Selenium, Appium, and Postman</strong>.</p>
+        </div>
+    </div>
+
+
+    </section><!-- /Hero Section -->
+
+</body>
+
+
+
+
 
 
 
@@ -152,73 +320,47 @@
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2 style="margin-bottom: 0;">Professional Experience</h2> <!-- Remove bottom margin -->
+    <h2 style="margin-bottom: 0;">Professional Experience</h2>
   </div><!-- End Section Title -->
 
   <div class="container">
+    <div class="row align-items-start" style="margin-top: 20px;"> <!-- Align items at the top -->
 
-    <div class="row">
-
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-        <!-- Experience Item 1 -->
-        <article class="resume-item" style="margin-bottom: 30px;"> <!-- Add margin-bottom for gap -->
+      <!-- Experience Item 1 -->
+      <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+        <article class="resume-item" style="margin-bottom: 30px;">
           <header>
-            <h4 style="font-weight: bold; margin: 0;">Quality Analyst - I</h4> <!-- Set margin to 0 -->
+            <div style="display: flex; align-items: center;">
+              <img src="assets/img/Leadrat-Logo-01-2048x575.png" alt="LeadRat" style="width: 40px; height: auto; margin-right: 10px;">
+              <h4 style="font-weight: bold; font-size: 24px; margin: 0;">LeadRat CRM</h4>
+            </div>
+            <h4 style="font-weight: bold; margin: 0;">Quality Analyst - I</h4>
             <h5 style="color: #555;">February 2024 – Present</h5>
-            <div style="display: flex; align-items: center;"> <!-- Flex container for image and text -->
-              <img src="assets/img/Leadrat-Logo-01-2048x575.png" alt="LeadRat" style="width: 40px; height: auto; margin-right: 10px;"> <!-- Company image -->
-             <h4 style="font-weight: bold;font-size: 24px;  margin: 0;">LeadRat CRM</h4> <!-- Set margin to 0 -->
-
-
-
-            </div>
           </header>
+        </article>
+      </div>
+<!-- Horizontal Line -->
+    <hr style="border: none; height: 1px; background-color: #149ddd; width: 90%; margin: 10px 19px;">
+
 <br>
-          <div class="resume-details">
-            <ul>
-              <li><strong>Test Planning & Execution:</strong> Designing and implementing comprehensive test cases and test plans for CRM applications, focusing on functionality, UI, regression, and sanity testing.</li>
-              <li><strong>API & Automation Testing:</strong> Driving API automation using Postman and Rest Assured to ensure backend reliability and seamless frontend integration.</li>
-              <li><strong>Mobile & Web Automation:</strong> Leveraging Java-Selenium and Appium to automate web and mobile applications, improving performance and usability testing.</li>
-              <li><strong>CI/CD Implementation:</strong> Streamlining the testing process by integrating automated tests into CI/CD pipelines, enabling rapid deployment and feedback.</li>
-              <li><strong>Team Leadership:</strong> Leading a team of two QA professionals, managing defect logging and resolution via Azure DevOps.</li>
-              <li><strong>Internationalization Testing:</strong> Ensuring adaptability across different cultures and regions.</li>
-            </ul>
-          </div>
-        </article><!-- End Experience Item -->
-
-        <!-- Experience Item 2 -->
-        <article class="resume-item pb-0">
+<br>
+      <!-- Experience Item 2 -->
+      <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
+        <article class="resume-item" style="margin-bottom: 30px;">
           <header>
-            <h4 style="font-weight: bold; margin: 0;">Associate Software Engineer</h4> <!-- Set margin to 0 -->
-            <h5 style="color: #555;">August 2022 – October 2023</h5>
-            <div style="display: flex; align-items: center;"> <!-- Flex container for image and text -->
-              <img src="assets/img/Fireflink.png" alt="Test Yantra" style="width: 40px; height: auto; margin-right: 10px;"> <!-- Company image -->
-              <h4 style="font-weight: bold;font-size: 24px;  margin: 0;">FireFlink Pvt Ltd</h4> <!-- Set margin to 0 -->
-
+            <div style="display: flex; align-items: center;">
+              <img src="assets/img/Fireflink.png" alt="FireFlink" style="width: 40px; height: auto; margin-right: 10px;">
+              <h4 style="font-weight: bold; font-size: 24px; margin: 0;">FireFlink Pvt Ltd</h4>
             </div>
+            <h4 style="font-weight: bold; margin: 0;">Associate Software Engineer</h4>
+            <h5 style="color: #555;">August 2022 – October 2023</h5>
           </header>
-            <br>
-          <div class="resume-details">
-            <ul>
-              <li><strong>Agile Methodology:</strong> Executed automated and manual test cases for web and mobile applications within Agile (Scrum), validating products across SDLC phases.</li>
-              <li><strong>BlackBox Testing:</strong> Conducted comprehensive BlackBox testing, including functionality, usability, smoke, sanity, and regression testing for web applications.</li>
-              <li><strong>Automation & Tooling:</strong> Utilized FireFlink for automation testing (web, mobile, and API) across domains like e-commerce, cybersecurity, healthcare, and transportation.</li>
-              <li><strong>Continuous Integration:</strong> Implemented and maintained CI/CD pipelines using Jenkins, enhancing testing efficiency and speeding up product releases.</li>
-              <li><strong>Defect Management:</strong> Used JIRA for test case management, bug tracking, and ensuring timely issue resolution.</li>
-            </ul>
-          </div>
-        </article><!-- End Experience Item -->
-
+        </article>
       </div>
 
     </div>
-
   </div>
-
 </section>
-<!-- /Experience Section -->
-
 
 
      
@@ -228,7 +370,10 @@
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Projects</h2>
-    <p> Explore some of the key projects I’ve worked on, showcasing my skills in test automation and API testing. Click on the project titles to view the details and code repositories.</p>
+  <p style="color: #050d18; font-weight: 600;">Explore some of the key projects I’ve worked on, showcasing my skills in test automation and API testing. Click on the project titles to view the details and code repositories.</p>
+
+
+
   </div><!-- End Section Title -->
 
   <div class="container">
@@ -283,15 +428,14 @@
 
 
 
-
-
 <!-- Skills Section -->
-<section id="skills" class="skills section ">
+<section id="skills" class="skills section">
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Skills</h2>
-    <p>Explore my technical skills, testing expertise, and frameworks that I utilize in Quality Assurance and Testing.</p>
+    <p style="color: #050d18; font-weight: 600;">Explore my technical skills, testing expertise, and frameworks that I utilize in Quality Assurance and Testing.</p>
+
   </div><!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -299,94 +443,94 @@
     <div class="row skills-content skills-animation">
 
       <!-- QA Skills Section -->
-      <div class="col-lg-6">
-        <h3 style="margin-bottom: 20px;">QA Skills:</h3>
+      <div class="col-lg-6 mb-4">
+        <h3 class="mb-4">QA Skills:</h3>
         <div class="row">
-          <div class="col-md-6">
-            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+          <div class="col-md-6 mb-3">
+            <div class="card skill-card text-center">
               <div class="card-body">
-                <i class="fas fa-project-diagram" style="font-size: 20px;"></i>
-                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">Agile (Scrum)</h5>
+                <i class="fas fa-project-diagram icon"></i>
+                <h5 class="card-title">Agile (Scrum)</h5>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+          <div class="col-md-6 mb-3">
+            <div class="card skill-card text-center">
               <div class="card-body">
-                <i class="fas fa-tachometer-alt" style="font-size: 20px;"></i>
-                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">Test Planning</h5>
+                <i class="fas fa-tachometer-alt icon"></i>
+                <h5 class="card-title">Test Planning</h5>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+          <div class="col-md-6 mb-3">
+            <div class="card skill-card text-center">
               <div class="card-body">
-                <i class="fas fa-bug" style="font-size: 20px;"></i>
-                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">Defect Management</h5>
+                <i class="fas fa-bug icon"></i>
+                <h5 class="card-title">Defect Management</h5>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+          <div class="col-md-6 mb-3">
+            <div class="card skill-card text-center">
               <div class="card-body">
-                <i class="fas fa-redo-alt" style="font-size: 20px;"></i>
-                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">Regression Testing</h5>
+                <i class="fas fa-redo-alt icon"></i>
+                <h5 class="card-title">Regression Testing</h5>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+          <div class="col-md-6 mb-3">
+            <div class="card skill-card text-center">
               <div class="card-body">
-                <i class="fas fa-user-check" style="font-size: 20px;"></i>
-                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">Usability Testing</h5>
+                <i class="fas fa-user-check icon"></i>
+                <h5 class="card-title">Usability Testing</h5>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+          <div class="col-md-6 mb-3">
+            <div class="card skill-card text-center">
               <div class="card-body">
-                <i class="fas fa-globe-americas" style="font-size: 20px;"></i>
-                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">Internationalization Testing</h5>
+                <i class="fas fa-globe-americas icon"></i>
+                <h5 class="card-title">Internationalization Testing</h5>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+          <div class="col-md-6 mb-3">
+            <div class="card skill-card text-center">
               <div class="card-body">
-                <i class="fas fa-robot" style="font-size: 20px;"></i>
-                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">Automation</h5>
+                <i class="fas fa-robot icon"></i>
+                <h5 class="card-title">Automation</h5>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+          <div class="col-md-6 mb-3">
+            <div class="card skill-card text-center">
               <div class="card-body">
-                <i class="fas fa-search" style="font-size: 20px;"></i>
-                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">Blackbox Testing</h5>
+                <i class="fas fa-search icon"></i>
+                <h5 class="card-title">Blackbox Testing</h5>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+          <div class="col-md-6 mb-3">
+            <div class="card skill-card text-center">
               <div class="card-body">
-                <i class="fas fa-mobile-alt" style="font-size: 20px;"></i>
-                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">UI Testing</h5>
+                <i class="fas fa-mobile-alt icon"></i>
+                <h5 class="card-title">UI Testing</h5>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+          <div class="col-md-6 mb-3">
+            <div class="card skill-card text-center">
               <div class="card-body">
-                <i class="fas fa-plug" style="font-size: 20px;"></i>
-                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">API Testing</h5>
+                <i class="fas fa-plug icon"></i>
+                <h5 class="card-title">API Testing</h5>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+          <div class="col-md-6 mb-3">
+            <div class="card skill-card text-center">
               <div class="card-body">
-                <i class="fas fa-mobile-alt" style="font-size: 20px;"></i>
-                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">Mobile Testing</h5>
+                <i class="fas fa-mobile-alt icon"></i>
+                <h5 class="card-title">Mobile Testing</h5>
               </div>
             </div>
           </div>
@@ -394,118 +538,161 @@
       </div><!-- End QA Skills Section -->
 
       <!-- Testing Frameworks Section -->
-      <div class="col-lg-6">
-        <h3 style="margin-bottom: 20px;">Testing Frameworks:</h3>
+      <div class="col-lg-6 mb-4">
+        <h3 class="mb-4">Testing Frameworks:</h3>
         <div class="row">
-          <div class="col-md-6">
-            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+          <div class="col-md-6 mb-3">
+            <div class="card skill-card text-center">
               <div class="card-body">
-                <i class="fas fa-layer-group" style="font-size: 20px;"></i>
-                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">Hybrid</h5>
+                <i class="fas fa-layer-group icon"></i>
+                <h5 class="card-title">Hybrid</h5>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card" style="margin-bottom: 10px; height: 80px; text-align: center; padding: 5px;">
+          <div class="col-md-6 mb-3">
+            <div class="card skill-card text-center">
               <div class="card-body">
-                <i class="fas fa-database" style="font-size: 20px;"></i>
-                <h5 class="card-title" style="font-size: 14px; font-weight: bold; color: #50A9E0;">Data-driven</h5>
+                <i class="fas fa-database icon"></i>
+                <h5 class="card-title">Data-driven</h5>
               </div>
             </div>
           </div>
         </div>
       </div><!-- End Testing Frameworks Section -->
 
-    </div>
+    </div><!-- End Skills Content -->
 
-
-<!-- Images Row Section -->
-<div class="row mt-5">
-  <div class="col-12">
-    <h3 style="margin-bottom: 20px;">Tools & Technologies:</h3>
-  </div>
-
-  <!-- First Row -->
-  <div class="col-md-3 text-center">
-    <img src="assets/img/selenium.png" alt="Selenium" style="width: 80%; height: auto;">
-    <p><strong></strong></p>
-  </div>
-  <div class="col-md-3 text-center">
-    <img src="assets/img/java-logo.png" alt="Java" style="width: 80%; height: auto;">
-    <p><strong></strong></p>
-  </div>
-  <div class="col-md-3 text-center">
-    <img src="assets/img/jenkins.jpg" alt="Jenkins" style="width: 80%; height: auto;">
-    <p><strong></strong></p>
-  </div>
-  <div class="col-md-3 text-center">
-    <img src="assets/img/maven.jpg" alt="Maven" style="width: 80%; height: auto;">
-    <p><strong></strong></p>
-  </div>
-
-  <!-- Second Row -->
- <div class="col-md-3 text-center">
-  <img src="assets/img/Jira.png" alt="Jira" style="width: 80%; height: auto; margin-bottom: 20px !important;">
-  <p><strong></strong></p>
-</div>
-
-
-  <div class="col-md-3 text-center">
-    <img src="assets/img/testng.png" alt="TestNG" style="width: 80%; height: auto;">
-    <p><strong></strong></p>
-  </div>
-  <div class="col-md-3 text-center">
-    <img src="assets/img/Azure.png" alt="Azure" style="width: 80%; height: auto;">
-    <p><strong></strong></p>
-  </div>
-  <div class="col-md-3 text-center">
-    <img src="assets/img/restassured.jpg" alt="Rest Assured" style="width: 80%; height: auto;">
-    <p><strong></strong></p>
-  </div>
-
-  <!-- Third Row -->
-  <div class="col-md-3 text-center">
-    <img src="assets/img/github.png" alt="GitHub" style="width: 80%; height: auto;">
-    <p><strong></strong></p>
-  </div>
-  <div class="col-md-3 text-center">
-    <img src="assets/img/postman.png" alt="Postman" style="width: 80%; height: auto;">
-    <p><strong></strong></p>
-  </div>
-  <div class="col-md-3 text-center">
-    <img src="assets/img/Html.png" alt="HTML" style="width: 80%; height: auto;">
-    <p><strong></strong></p>
-  </div>
-  <div class="col-md-3 text-center">
-    <img src="assets/img/CSS.jpg" alt="CSS" style="width: 80%; height: auto;">
-    <p><strong></strong></p>
-  </div>
-
-  <!-- Fourth Row -->
-  <div class="col-md-3 text-center">
-    <img src="assets/img/js.jpg" alt="JavaScript" style="width: 80%; height: auto;">
-    <p><strong></strong></p>
-  </div>
-  <div class="col-md-3 text-center">
-    <img src="assets/img/Appium.png" alt="Appium" style="width: 80%; height: auto;">
-    <p><strong></strong></p>
-  </div>
-  <div class="col-md-3 text-center">
-    <img src="assets/img/Git.png" alt="Git" style="width: 80%; height: auto;">
-    <p><strong></strong></p>
-  </div>
-  <div class="col-md-3 text-center">
-    <img src="assets/img/SQL.jpeg" alt="SQL" style="width: 80%; height: auto;">
-    <p><strong></strong></p>
-  </div>
-</div><!-- End Images Row Section -->
-
- 
+  </div><!-- End Container -->
 
 </section><!-- End Skills Section -->
 
+<!-- CSS for styling -->
+<style>
+  .skill-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .icon {
+    font-size: 30px;
+    color: #50A9E0;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .skill-card {
+      height: auto; /* Allow cards to adapt based on content */
+    }
+  }
+</style>
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools and Technologies</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+    <!-- Custom CSS -->
+    <style>
+        .tech-image {
+            width: 100px; /* Set the width of each image */
+            height: 100px; /* Set the height of each image */
+            object-fit: contain; /* Ensure the image fits within the given dimensions */
+            margin-bottom: 10px; /* Space between image and caption */
+        }
+
+        .text-center p {
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Tools and Technologies Section -->
+<section id="tools-tech" class="tools-tech section light-background">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Tools and Technologies</h2>
+<p style="color: #050d18; font-weight: 600;">I am always fond of learning new technologies and tools, these are some of them which I have explored.</p>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="container">
+        <div class="row text-center">
+            
+            <!-- First Row -->
+            <div class="col-3 col-md-3">
+                <img src="assets/img/java-logo.png" alt="Java" class="img-fluid tech-image">
+            </div>
+            <div class="col-3 col-md-3">
+                <img src="assets/img/selenium.png" alt="Selenium" class="img-fluid tech-image">
+            </div>
+            <div class="col-3 col-md-3">
+                <img src="assets/img/restassured.jpg" alt="Rest Assured" class="img-fluid tech-image">
+            </div>
+            <div class="col-3 col-md-3">
+                <img src="assets/img/Appium.png" alt="Appium" class="img-fluid tech-image">
+            </div>
+            
+            <!-- Second Row -->
+            <div class="col-3 col-md-3">
+                <img src="assets/img/postman.png" alt="Postman" class="img-fluid tech-image">
+            </div>
+            <div class="col-3 col-md-3">
+                <img src="assets/img/SQL.jpeg" alt="SQL" class="img-fluid tech-image">
+            </div>
+            <div class="col-3 col-md-3">
+                <img src="assets/img/Jira.png" alt="Jira" class="img-fluid tech-image">
+            </div>
+            <div class="col-3 col-md-3">
+                <img src="assets/img/Azure.png" alt="Azure" class="img-fluid tech-image">
+            </div>
+            
+            <!-- Third Row -->
+            <div class="col-3 col-md-3">
+                <img src="assets/img/jenkins.jpg" alt="Jenkins" class="img-fluid tech-image">
+            </div>
+            <div class="col-3 col-md-3">
+                <img src="assets/img/github.png" alt="GitHub" class="img-fluid tech-image">
+            </div>
+            <div class="col-3 col-md-3">
+                <img src="assets/img/Git.png" alt="Git" class="img-fluid tech-image">
+            </div>
+            <div class="col-3 col-md-3">
+                <img src="assets/img/testng.png" alt="TestNG" class="img-fluid tech-image">
+            </div>
+            
+            <!-- Fourth Row -->
+            <div class="col-3 col-md-3">
+                <img src="assets/img/CSS.jpg" alt="CSS" class="img-fluid tech-image">
+            </div>
+            <div class="col-3 col-md-3">
+                <img src="assets/img/js.jpg" alt="JavaScript" class="img-fluid tech-image">
+            </div>
+            <div class="col-3 col-md-3">
+                <img src="assets/img/maven.jpg" alt="Maven" class="img-fluid tech-image">
+            </div>
+            <div class="col-3 col-md-3">
+                <img src="assets/img/Html.png" alt="HTML" class="img-fluid tech-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
 
 
 
@@ -518,7 +705,8 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-	<p>I am always open to new opportunities and collaborations. If you have any questions, want to discuss potential projects, or simply wish to connect, please reach out. I look forward to hearing from you and will get back to you as soon as possible.</p>
+	<p style="color: #050d18; font-weight: 600;">I am always open to new opportunities and collaborations. If you have any questions, want to discuss potential projects, or simply wish to connect, please reach out. I look forward to hearing from you and will get back to you as soon as possible.</p>
+
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -532,8 +720,8 @@
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
-                  <h3>Phone</h3>
-                  <p>+91 9741846197</p>
+                  <h3 >Phone</h3>
+                  <p >+91 9741846197</p>
                 </div>
               </div><!-- End Info Item -->
 

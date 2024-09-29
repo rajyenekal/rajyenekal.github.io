@@ -363,68 +363,82 @@
 </section>
 
 
-     
 <!-- Projects Section -->
 <section id="projects" class="projects section light-background">
 
-  <!-- Section Title -->
+ <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>Projects</h2>
-  <p style="color: #050d18; font-weight: 600;">Explore some of the key projects I’ve worked on, showcasing my skills in test automation and API testing. Click on the project titles to view the details and code repositories.</p>
+    <h2 style="margin-bottom: 0;">Projects</h2>
+  </div><!-- End Section Title -->
 
 
-
+    
+    <p style="color: #050d18; font-weight: 600;">
+      Explore some of the key projects I’ve worked on, showcasing my skills in test automation and API testing. Click on the project titles to view the details and code repositories.
+    </p>
   </div><!-- End Section Title -->
 
   <div class="container">
-
     <div class="row gy-4">
-
-      <!-- Project Item 1 -->
-      <div class="col-lg-4 col-md-6 project-item d-flex align-items-start" data-aos="fade-up" data-aos-delay="100">
-        <div class="icon flex-shrink-0" style="font-size: 24px; margin-right: 15px;">
-          <i class="bi bi-briefcase"></i>
-        </div>
-        <div>
-          <h4 class="title">
-            <a href="https://github.com/rajyenekal/Leadrat_Automation" class="stretched-link" target="_blank">Leadrat Automation</a>
-          </h4>
-          <p class="description">A test automation framework for the Real Estate CRM covers web, mobile, and API, ensuring efficient testing and quality.</p>
-        </div>
-      </div><!-- End Project Item -->
-
-      <!-- Project Item 2 -->
-      <div class="col-lg-4 col-md-6 project-item d-flex align-items-start" data-aos="fade-up" data-aos-delay="200">
-        <div class="icon flex-shrink-0" style="font-size: 24px; margin-right: 15px;">
-          <i class="bi bi-card-checklist"></i>
-        </div>
-        <div>
-          <h4 class="title">
-            <a href="https://github.com/rajyenekal/PetStoreAutomation" class="stretched-link" target="_blank">PetStore Automation</a>
-          </h4>
-          <p class="description">API Automation Project using Java - Rest Assured Library.</p>
-        </div>
-      </div><!-- End Project Item -->
-
-      <!-- Project Item 3 -->
-      <div class="col-lg-4 col-md-6 project-item d-flex align-items-start" data-aos="fade-up" data-aos-delay="300">
-        <div class="icon flex-shrink-0" style="font-size: 24px; margin-right: 15px;">
-          <i class="bi bi-bar-chart"></i>
-        </div>
-        <div>
-          <h4 class="title">
-            <a href="https://github.com/rajyenekal/Askomdch_Ecommerce" class="stretched-link" target="_blank">Askomdch E-commerce</a>
-          </h4>
-          <p class="description">Java-based Selenium automation project for an e-commerce application.</p>
-        </div>
-      </div><!-- End Project Item -->
-
+    <!-- Project Item 1 -->
+<div class="col-lg-4 col-md-6 project-item d-flex align-items-start text-center" data-aos="fade-up" data-aos-delay="100">
+  <a href="https://github.com/rajyenekal/Leadrat_Automation" target="_blank" style="text-decoration: none; color: inherit;">
+    <div style="padding: 20px; border-radius: 10px; background-color: #ffffff; border: 1px solid #e1e1e1; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s;">
+      <i class="bi bi-laptop" style="font-size: 40px; color: #0056b3;"></i>
+      <h4 class="title">Leadrat Automation</h4>
+      <p class="description" style="margin-bottom: 0; font-weight: normal;">A test automation framework for the Real Estate CRM covers web, mobile, and API, ensuring efficient testing and quality.</p>
     </div>
+  </a>
+</div><!-- End Project Item -->
 
-  </div>
+<!-- Project Item 2 -->
+<div class="col-lg-4 col-md-6 project-item d-flex align-items-start text-center" data-aos="fade-up" data-aos-delay="200">
+  <a href="https://github.com/rajyenekal/PetStoreAutomation" target="_blank" style="text-decoration: none; color: inherit;">
+    <div style="padding: 20px; border-radius: 10px; background-color: #ffffff; border: 1px solid #e1e1e1; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s;">
+      <i class="bi bi-people" style="font-size: 40px; color: #28a745;"></i>
+      <h4 class="title">PetStore Automation</h4>
+      <p class="description" style="margin-bottom: 0; font-weight: normal;">API Automation Project using Java - Rest Assured Library.</p>
+    </div>
+  </a>
+</div><!-- End Project Item -->
+
+
+<!-- Project Item 3 -->
+<div class="col-lg-4 col-md-6 project-item d-flex align-items-start text-center" data-aos="fade-up" data-aos-delay="300">
+  <a href="https://github.com/rajyenekal/Askomdch_Ecommerce" target="_blank" style="text-decoration: none; color: inherit;">
+    <div style="padding: 20px; border-radius: 10px; background-color: #ffffff; border: 1px solid #e1e1e1; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s;">
+      <i class="bi bi-shop" style="font-size: 40px; color: #dc3545;"></i>
+      <h4 class="title">Askomdch E-commerce</h4>
+      <p style="margin-bottom: 0; font-weight: normal;">Java-based Selenium automation project for an e-commerce application.</p>
+    </div>
+  </a>
+</div><!-- End Project Item -->
+
 
 </section><!-- /Projects Section -->
-   
+
+<script>
+  // Add hover effect for project items
+  const projectCards = document.querySelectorAll('.project-item > a > div');
+
+  projectCards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.style.transform = 'translateY(-5px)';
+      card.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.2)';
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'translateY(0)';
+      card.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+    });
+  });
+</script>
+
+
+
+
+
+
 
 
 
@@ -437,160 +451,157 @@
     <p style="color: #050d18; font-weight: 600;">Explore my technical skills, testing expertise, and frameworks that I utilize in Quality Assurance and Testing.</p>
 
   </div><!-- End Section Title -->
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row skills-content skills-animation">
-
-      <!-- QA Skills Section -->
-      <div class="col-lg-6 mb-4">
-        <h3 class="mb-4">QA Skills:</h3>
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <div class="card skill-card text-center">
-              <div class="card-body">
-                <i class="fas fa-project-diagram icon"></i>
-                <h5 class="card-title">Agile (Scrum)</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="card skill-card text-center">
-              <div class="card-body">
-                <i class="fas fa-tachometer-alt icon"></i>
-                <h5 class="card-title">Test Planning</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="card skill-card text-center">
-              <div class="card-body">
-                <i class="fas fa-bug icon"></i>
-                <h5 class="card-title">Defect Management</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="card skill-card text-center">
-              <div class="card-body">
-                <i class="fas fa-redo-alt icon"></i>
-                <h5 class="card-title">Regression Testing</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="card skill-card text-center">
-              <div class="card-body">
-                <i class="fas fa-user-check icon"></i>
-                <h5 class="card-title">Usability Testing</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="card skill-card text-center">
-              <div class="card-body">
-                <i class="fas fa-globe-americas icon"></i>
-                <h5 class="card-title">Internationalization Testing</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="card skill-card text-center">
-              <div class="card-body">
-                <i class="fas fa-robot icon"></i>
-                <h5 class="card-title">Automation</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="card skill-card text-center">
-              <div class="card-body">
-                <i class="fas fa-search icon"></i>
-                <h5 class="card-title">Blackbox Testing</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="card skill-card text-center">
-              <div class="card-body">
-                <i class="fas fa-mobile-alt icon"></i>
-                <h5 class="card-title">UI Testing</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="card skill-card text-center">
-              <div class="card-body">
-                <i class="fas fa-plug icon"></i>
-                <h5 class="card-title">API Testing</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="card skill-card text-center">
-              <div class="card-body">
-                <i class="fas fa-mobile-alt icon"></i>
-                <h5 class="card-title">Mobile Testing</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div><!-- End QA Skills Section -->
-
-      <!-- Testing Frameworks Section -->
-      <div class="col-lg-6 mb-4">
-        <h3 class="mb-4">Testing Frameworks:</h3>
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <div class="card skill-card text-center">
-              <div class="card-body">
-                <i class="fas fa-layer-group icon"></i>
-                <h5 class="card-title">Hybrid</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="card skill-card text-center">
-              <div class="card-body">
-                <i class="fas fa-database icon"></i>
-                <h5 class="card-title">Data-driven</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div><!-- End Testing Frameworks Section -->
-
-    </div><!-- End Skills Content -->
-
-  </div><!-- End Container -->
-
-</section><!-- End Skills Section -->
-
-<!-- CSS for styling -->
 <style>
   .skill-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    width: 90%; /* Reduced container size */
+    margin: auto; /* Center cards */
   }
 
   .skill-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Slightly lift card on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
   }
 
   .icon {
-    font-size: 30px;
-    color: #50A9E0;
-    margin-bottom: 10px;
+    font-size: 2rem; /* Keep icon size the same */
+    color: #007bff; /* Icon color */
   }
 
-  @media (max-width: 768px) {
-    .skill-card {
-      height: auto; /* Allow cards to adapt based on content */
-    }
+  .card-title {
+    font-size: 0.8rem; /* Reduced font size for card titles */
   }
 </style>
+
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div class="row skills-content skills-animation">
+
+    <!-- QA Skills Section -->
+    <div class="col-lg-12 mb-4">
+      <h3 class="mb-4" style="font-size: 1.5rem;">QA Skills:</h3>
+      <div class="row">
+        <div class="col-md-3 col-6 mb-3"> <!-- 4 cards in a row for mobile -->
+          <div class="card skill-card text-center">
+            <div class="card-body">
+              <i class="fas fa-project-diagram icon"></i>
+              <h5 class="card-title">Agile (Scrum)</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+          <div class="card skill-card text-center">
+            <div class="card-body">
+              <i class="fas fa-tachometer-alt icon"></i>
+              <h5 class="card-title">Test Planning</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+          <div class="card skill-card text-center">
+            <div class="card-body">
+              <i class="fas fa-bug icon"></i>
+              <h5 class="card-title">Defect Management</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+          <div class="card skill-card text-center">
+            <div class="card-body">
+              <i class="fas fa-redo-alt icon"></i>
+              <h5 class="card-title">Regression Testing</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+          <div class="card skill-card text-center">
+            <div class="card-body">
+              <i class="fas fa-user-check icon"></i>
+              <h5 class="card-title">Usability Testing</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+          <div class="card skill-card text-center">
+            <div class="card-body">
+              <i class="fas fa-globe-americas icon"></i>
+              <h5 class="card-title">Internationalization Testing</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+          <div class="card skill-card text-center">
+            <div class="card-body">
+              <i class="fas fa-robot icon"></i>
+              <h5 class="card-title">Automation</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+          <div class="card skill-card text-center">
+            <div class="card-body">
+              <i class="fas fa-search icon"></i>
+              <h5 class="card-title">Blackbox Testing</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+          <div class="card skill-card text-center">
+            <div class="card-body">
+              <i class="fas fa-mobile-alt icon"></i>
+              <h5 class="card-title">UI Testing</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+          <div class="card skill-card text-center">
+            <div class="card-body">
+              <i class="fas fa-plug icon"></i>
+              <h5 class="card-title">API Testing</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+          <div class="card skill-card text-center">
+            <div class="card-body">
+              <i class="fas fa-mobile-alt icon"></i>
+              <h5 class="card-title">Mobile Testing</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End QA Skills Section -->
+
+    <!-- Testing Frameworks Section -->
+    <div class="col-lg-12 mb-4">
+      <h3 class="mb-4" style="font-size: 1.5rem;">Testing Frameworks:</h3>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <div class="card skill-card text-center">
+            <div class="card-body">
+              <i class="fas fa-layer-group icon"></i>
+              <h5 class="card-title">Hybrid</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="card skill-card text-center">
+            <div class="card-body">
+              <i class="fas fa-database icon"></i>
+              <h5 class="card-title">Data-driven</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Testing Frameworks Section -->
+
+  </div><!-- End Skills Content -->
+</div><!-- End Container -->
+
+       
+
+
+
+
 
 
 <!DOCTYPE html>

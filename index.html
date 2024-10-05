@@ -716,16 +716,20 @@
 </body>
 </html>
 
-
-	<!-- GitHub Contribution Graph Section -->
-<section id="github-graph" class="tools-tech section light-background" style="margin-top: -20px;"> <!-- Adjusted margin here -->
+<!-- GitHub Contribution Graph Section -->
+<section id="github-graph" class="tools-tech section" style="margin-top: -20px;">
     <div class="container">
-        <div class="contribution-section" style="padding: 40px; border-radius: 15px; background: linear-gradient(to bottom right, #f9fcff, #eaf7ff); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); text-align: center; transition: transform 0.3s;">
-            <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 2rem; font-weight: bold;">GitHub Contributions</h3>
-            <p style="color: #34495e; margin-bottom: 20px; font-size: 1.1rem;">A visual representation of my contributions on GitHub over time.</p>
+        <div class="contribution-section" style="padding: 20px; border-radius: 15px; background: linear-gradient(to bottom right, #1a1a1a, #2c3e50); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25); text-align: center; transition: transform 0.3s; max-width: 1400px; margin: 0 auto; animation: fadeIn 1s ease-in-out;">
+            <!-- Minimal heading and text -->
+            <h3 style="color: #ecf0f1; margin-bottom: 10px; font-size: 1.8rem; font-weight: 500;">GitHub Contributions</h3>
+            <p style="color: #bdc3c7; margin-bottom: 15px; font-size: 1rem;">A visual representation of my GitHub activity.</p>
+            
+            <!-- GitHub Contribution Graph with glow and hover animation -->
             <div class="text-center">
-                <img src="https://ghchart.rshah.org/rajyenekal" alt="GitHub Contribution Graph" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); transition: transform 0.3s; transform: scale(1);">
+                <img src="https://ghchart.rshah.org/rajyenekal?&background=1c1c1c&color=00ff00" alt="GitHub Contribution Graph" class="img-fluid graph-img" style="width: 100%; max-width: 1300px; height: auto; border-radius: 10px; box-shadow: 0 8px 24px rgba(0, 255, 0, 0.3); transition: all 0.5s ease-in-out;">
             </div>
+            
+            <!-- GitHub profile link -->
             <div style="margin-top: 20px;">
                 <a href="https://github.com/rajyenekal" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #2980b9; color: white; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background-color 0.3s; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
                     View My GitHub Profile
@@ -734,6 +738,32 @@
         </div>
     </div>
 </section>
+
+<!-- Animation Styles -->
+<style>
+    /* Fade-in effect for the entire contribution section */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Glow effect and hover zoom for the graph */
+    .graph-img {
+        box-shadow: 0 8px 24px rgba(0, 255, 0, 0.3); /* Initial soft glow */
+        transition: box-shadow 0.5s ease, transform 0.3s ease;
+    }
+    .graph-img:hover {
+        transform: scale(1.08); /* Zoom on hover */
+        box-shadow: 0 10px 35px rgba(0, 255, 0, 0.6); /* Intense glow on hover */
+    }
+</style>
+
 
 <style>
     /* Hover effect for the image */
